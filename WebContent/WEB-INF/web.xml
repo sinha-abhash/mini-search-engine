@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>is-project</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>SearchServletName</servlet-name>
+    <servlet-class>com.wse.ui.SearchServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SearchServletName</servlet-name>
+    <url-pattern>/SearchServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>JsonName</servlet-name>
+    <servlet-class>com.wse.externalinterface.json</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>JsonName</servlet-name>
+    <url-pattern>/json</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ImageSearchServletName</servlet-name>
+    <servlet-class>com.wse.servlet.ImageSearchServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ImageSearchServletName</servlet-name>
+    <url-pattern>/ImageSearchServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>AdminSearchServletName</servlet-name>
+    <servlet-class>com.wse.servlet.AdminServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdminSearchServletName</servlet-name>
+    <url-pattern>/AdminSE</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>MetaSearchEngineServletName</servlet-name>
+    <servlet-class>com.wse.servlet.MetaSearchEngineServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MetaSearchEngineServletName</servlet-name>
+    <url-pattern>/MetaSearchEngineServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>TestConnectionServletName</servlet-name>
+    <servlet-class>com.wse.servlet.TestConnectionServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TestConnectionServletName</servlet-name>
+    <url-pattern>/TestConnection</url-pattern>
+  </servlet-mapping>
+</web-app>
